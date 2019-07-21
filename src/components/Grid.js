@@ -1,7 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-function Grid() {
-  return <div id="grid" />;
+export default class Grid {
+  onClick = event => {
+    event.preventDefault();
+  };
+  render() {
+    return (
+      <Fragment>
+        <div id="grid" />
+        <button onClick={this.onClick}>New Module</button>
+      </Fragment>
+    );
+  }
 }
-
-export default Grid;

@@ -7,13 +7,7 @@ export default class App extends Component {
     return (
       <Fragment>
         <Grid />
-        <button onClick={this.onClick}>New Module</button>
       </Fragment>
     );
   }
-
-  onClick = event => {
-    event.preventDefault();
-    console.log(this.Fragment);
-  };
 }
